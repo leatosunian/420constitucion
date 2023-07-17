@@ -13,7 +13,7 @@ const scrollFunction = () => {
     document.addEventListener("click", e => {
         window.scrollTo({
             behavior: "smooth",
-            top: 4370
+            top: 4670
         })
     })
 }
