@@ -266,7 +266,7 @@ header {
     /* justify-content: center; */
     align-items: center;
     gap: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 190px;
 }
 
 .s3promoscard {
@@ -330,7 +330,7 @@ header {
 
 .s3beneficioscont {
     width: 100%;
-    height: 360px;
+    height: 310px;
     background-image: url(./images/weedbanner.jpg);
     background-size: cover;
     display: flex;
@@ -387,7 +387,7 @@ header {
     color: white;
     text-align: center;
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,7 +395,7 @@ header {
 
 .s4cont {
     width: 80%;
-    height: 75%;
+    height: 67%;
     background-color: #0a0a0a91;
     backdrop-filter: blur(3px);
     border-radius: 15px;
