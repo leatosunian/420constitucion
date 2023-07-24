@@ -610,6 +610,7 @@ header {
 
     .s3promoscardtext {
         padding: 0 20px;
+        width: 100%;
     }
 
     .s3promoscardtext span {
@@ -634,7 +635,7 @@ header {
         width: 70vw;
         max-width: 80vw;
         /* height: fit-content; */
-        height: 270px;
+        height: 300px;
         border-radius: 15px;
         border: 0px solid white;
         padding: 0 0;
@@ -649,7 +650,7 @@ header {
 
     .s3promoscard img {
         width: 40%;
-        height: 270px;
+        height: 300px;
         object-fit:cover;
         border-radius: 15px 0px 0px 15px;
         -webkit-border-radius: 15px 0px 0px 15px;
