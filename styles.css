@@ -4,6 +4,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+main {
+    width: 100vw;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -11,7 +15,7 @@ html {
 /* HEADER */
 
 header {
-    width: 100%; 
+    width: 100vw; 
     position: fixed;
 
 }
@@ -24,6 +28,7 @@ header {
     justify-content: space-between;
     border-top: 1px solid purple;
     align-items: center;
+    z-index: 20000;
 }
 
 .header img {
@@ -530,7 +535,126 @@ header {
 
 
 
+@media (max-width: 1000px) {
+    .header {
+        height: 70px;
+    }
+    .header img {
+        width: 75px;
+        transform: translateY(2px);
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+        -o-transform: translateY(2px);
+}
+    .header nav {
+        display: none;
+    }
 
+    .s3headertext {
+        padding: 65px 25px;    
+    }
+
+    .s3headertext h3 {
+        font-size: 30px;
+        margin-top: 0 !important;
+    }
+
+    .s3headertext p {
+        font-size: 15px;
+        padding: 0 !important;
+    }
+
+    .s3card span {
+        font-size: 20px;
+    }
+
+    .s3card p {
+        font-size: 14px;
+    }
+
+    .s3textcont {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .s3beneficioscont {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .s3promoscont {
+        padding-bottom: 60px;
+    }
+
+    .s3promoscardtext {
+        padding: 20px;
+    }
+
+    .s3promoscardtext span {
+        font-size: 13px;
+    }
+
+    .s3promoscardtext h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .s3promoscardtext p {
+        font-size: 13px;
+    }
+
+    footer {
+        height: 490px !important;
+        background-size: cover !important;
+    }
+
+    .s4cont {
+        width: 80%;
+        height: fit-content;
+        background-color: #0a0a0a91;
+        backdrop-filter: blur(3px);
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        border: 0px solid white;
+    }
+
+    .s2cont {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        padding: 65px 25px;
+        align-items: center;
+    }
+
+    .s2imgcont {
+        display: none;
+    }
+
+    .s2textmain {
+        width: 100%;
+    }
+
+    .s2textcont h3 {
+        font-size: 30px;
+        align-self: center;
+    }
+
+    .s2textcont p {
+        font-size: 15px;
+    }
+
+    .s2textcont span {
+        font-size: 24px;
+    }
+}
 
 /* SECTION 5 */
 
