@@ -118,6 +118,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #0a0a0a;
 }
 
 .s2imgcont {
@@ -137,26 +138,34 @@ header {
     height: 100%;
     justify-content: center;
     align-items: center;
+    background-color: #0a0a0a;
+    color: white;
 }
 
 .s2textcont{
-    width: 500px;
+    width: 550px;
     line-height: 27px;
     font-size: 19px;
     text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    border-radius: 15px;
+    padding: 55px 38px;
+    box-shadow: -10px 10px 25px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -10px 10px 25px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 25px 1px rgba(0,0,0,0.75);
+    -webkit-border-radius: 15px;
 }
 
 .s2textcont h3 {
     color: rgb(127, 0, 185);
-    font-size: 40px;
-    margin-bottom: 44px;
+    font-size: 38px;
+    margin-bottom: 30px;
 }
 
 .s2textcont p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -607,7 +616,7 @@ header {
     color: white;
     text-align: center;
     width: 100%;
-    height: 70vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -651,10 +660,23 @@ header {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
 
 }
+
+.s6contentcontspan {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.s6contentcontp {
+    text-align: left;
+}
+
+
 
 .s6cardcont {
     width: fit-content;
@@ -662,7 +684,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 7px;
     justify-content: space-around;
     gap:50px;
 }
@@ -1013,6 +1035,12 @@ header {
         font-size: 14px;
     }
 
+    .s6contentcontspan {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
 
 }
 
