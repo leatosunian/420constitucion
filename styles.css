@@ -167,6 +167,7 @@ header {
 .s2textcont p {
     font-size: 16px;
     font-weight: 400;
+
 }
 
 .s2textcont span {
@@ -950,6 +951,10 @@ header {
         width: 100%;
     }
 
+    .s2textcont {
+        text-align: left;
+    }
+
     .s2textcont h3 {
         font-size: 30px;
         align-self: center;
@@ -1024,6 +1029,7 @@ header {
     .s6contentcont {
         text-align: justify;
         margin-bottom: 55px;
+        max-width: 90%;
     }
 
 
