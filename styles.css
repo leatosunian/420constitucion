@@ -497,7 +497,7 @@ header {
 
 .buttonBarber {
     margin-top: 30px;
-    width: 140px;
+    width: fit-content;
     height: 40px;
     border-radius: 150px;
     background-color: #0a0a0a1e;
@@ -506,7 +506,7 @@ header {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    padding: 2px 10px;
+    padding: 4px 14px;
     transition: .4s all ease-in-out;
     -webkit-transition: .4s all ease-in-out;
     -moz-transition: .4s all ease-in-out;
@@ -557,7 +557,7 @@ header {
 /* SECTION 5 START */
 
 #section5 {
-    background-image: url(./images/coffee.jpeg) ;
+    background-image: url(./images/coffee.jpg) ;
     background-size: cover;
     color: white;
     text-align: center;
@@ -1201,6 +1201,30 @@ footer > div > img {
         align-items: center;
         width: 90vw;
         max-width: 90vw;
+    }
+
+    .s2cont {
+        height: 95%;
+    }
+
+    .s2textcont {
+        width: 450px;
+        padding: 35px 28px;
+    }
+    .s2textcont h3 {
+        color: rgb(127, 0, 185);
+        font-size: 33px;
+        margin-bottom: 30px;
+    }
+    
+    .s2textcont p {
+        font-size: 12px;
+        font-weight: 400;
+    
+    }
+    
+    .s2textcont span {
+        font-size: 23px;
     }
 }
 
