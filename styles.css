@@ -255,8 +255,8 @@ header {
     border: 0px solid white;
     padding: 18px 18px;
     box-shadow: -10px 10px 25px 1px rgba(0,0,0,0.75);
--webkit-box-shadow: -10px 10px 25px 1px rgba(0,0,0,0.75);
--moz-box-shadow: -10px 10px 25px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -10px 10px 25px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 25px 1px rgba(0,0,0,0.75);
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
