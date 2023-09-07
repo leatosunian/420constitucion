@@ -53,9 +53,10 @@ header {
     -o-transform: translateY(-25px);
 }
 
-.navcontainer span{
+.navcontainer a{
     color: white;
     cursor: pointer;
+    text-decoration: none;
     font-size: 14px;
     letter-spacing: -.5px;
     transition: .4s all ease-in-out;
@@ -65,7 +66,7 @@ header {
     -o-transition: .4s all ease-in-out;
 }
 
-.navcontainer span:hover{
+.navcontainer a:hover{
     color: rgb(127, 0, 185);
     cursor: pointer;
     transition: .4s all ease-in-out;
@@ -942,6 +943,7 @@ header {
         flex-direction: row;
         padding: 65px 25px;
         align-items: center;
+        background-color: #0a0a0a;
     }
 
     .s2imgcont {
