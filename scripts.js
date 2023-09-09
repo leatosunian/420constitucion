@@ -1,47 +1,15 @@
-const btnBarberia = document.querySelector("#btnBarberia")
-const btnClub = document.querySelector("#btnClub")
-const btnTienda = document.querySelector("#btnTienda")
-const btnAsociate = document.querySelector("#btnAsociate")
-const btnContacto = document.querySelector("#btnContacto")
+const hamburguer = document.querySelector('.hamburguer')
+const navMenu = document.querySelector('.nav-menu')
 
-window.addEventListener("scroll", e => {
-    console.log(document.documentElement.scrollTop)
+hamburguer.addEventListener('click', () => {
+    hamburguer.classList.toggle('active')
+    navMenu.classList.toggle('active')
 })
 
-btnBarberia.addEventListener("click", e => {
-    window.scrollTo({
-        behavior: "smooth",
-        top: 4470
-    })
-})
+document.querySelectorAll('.nav-link').forEach(e  => e.addEventListener('click', () => {
+    hamburguer.classList.remove('active')
+    navMenu.classList.remove('active')
 
-btnAsociate.addEventListener("click", e => {
-    window.scrollTo({
-        behavior: "smooth",
-        top: 2110
-    })
-})
-
-btnClub.addEventListener("click", e => {
-    window.scrollTo({
-        behavior: "smooth",
-        top: 1098
-    })
-})
-
-btnContacto.addEventListener("click", e => {
-    window.scrollTo({
-        behavior: "smooth",
-        top: 4470
-    })
-})
-
-btnTienda.addEventListener("click", e => {
-    window.scrollTo({
-        behavior: "smooth",
-        top: 4470
-    })
-})
-
+}))
 
 

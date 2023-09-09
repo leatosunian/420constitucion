@@ -173,7 +173,7 @@ header {
 
 }
 
-.s2textcont span {
+.s2textcont a {
     font-size: 26px;
     font-weight: 600;
     color: rgb(127, 0, 185);
@@ -184,7 +184,7 @@ header {
     -o-transition: .4s all ease-in-out;
 }
 
-.s2textcont span:hover {
+.s2textcont a:hover {
     transition: .4s all ease-in-out;
     -webkit-transition: .4s all ease-in-out;
     -moz-transition: .4s all ease-in-out;
@@ -750,6 +750,7 @@ header {
 @media (max-width: 1000px) {
     .header {
         height: 70px;
+        padding: 0  14px  0 25px   ;
     }
     .header img {
         width: 75px;
@@ -762,6 +763,62 @@ header {
     .header nav {
         display: none;
     }
+
+
+
+    .nav-menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        top: 70px;
+        left: 100%;
+        backdrop-filter: blur(10px);
+        gap: 26px;
+        font-size: 22px;
+        padding-top: 28px;
+        padding-right: 40px;
+        transition: 0.3s all;
+        -webkit-transition: 0.3s all;
+        -moz-transition: 0.3s all;
+        -ms-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        z-index: 200;
+        background-color: rgba(0, 0, 0, 0.363);
+        align-items: flex-end;
+    }
+
+    .nav-menu.active {
+        top: 70px;
+        left: 0;
+        backdrop-filter: blur(10px);
+        transition: 0.3s all;
+        -webkit-transition: 0.3s all;
+        -moz-transition: 0.3s all;
+        -ms-transition: 0.3s all;
+        -o-transition: 0.3s all;
+    }
+
+    .dividers {
+        width: 300px;
+        height: 1px;
+        background-color: rgb(168, 168, 168);
+        margin: 0px auto;
+        filter: blur(0px);
+        opacity: .4;
+        -webkit-filter: blur(0px);
+    }
+
+    .nav-link {
+        font-size: 20px;
+        margin: 7px 0;
+        z-index: 100;
+        color: white;
+        text-decoration: none;
+    }
+
+
 
     .s3headertext {
         padding: 65px 25px;    
@@ -969,8 +1026,9 @@ header {
         font-size: 15px;
     }
 
-    .s2textcont span {
+    .s2textcont a {
         font-size: 24px;
+        text-decoration: none;
     }
 
 
@@ -1228,7 +1286,7 @@ footer > div > img {
     
     }
     
-    .s2textcont span {
+    .s2textcont a {
         font-size: 23px;
     }
 }
@@ -1269,4 +1327,47 @@ footer > div > img {
         flex-direction: row;
         gap: 10px;
     }
+}
+
+/* HAMBURGUER ANIMATED ICON */
+
+.hamburguer {
+    cursor: pointer;
+    display: block;
+    flex-direction: column;
+    margin: 16px 0px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.bar {
+
+    display: block;
+    width: 26px;
+    height: 1px;
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.hamburguer.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburguer.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -moz-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+}
+
+.hamburguer.active .bar:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -moz-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    -o-transform: translateY(-10px) rotate(-45deg);
 }
