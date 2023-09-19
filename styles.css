@@ -99,7 +99,7 @@ header {
 }
 
 #section1 img {
-    width: 100%;
+    width: 100%!important;
     overflow: hidden;
 }
 /* SECTION 1 END */
@@ -163,8 +163,8 @@ header {
 
 .s2textcont h3 {
     color: rgb(127, 0, 185);
-    font-size: 38px;
-    margin-bottom: 30px;
+    font-size: 34px;
+    margin-bottom: 16px;
 }
 
 .s2textcont p {
@@ -177,6 +177,7 @@ header {
     font-size: 26px;
     font-weight: 600;
     color: rgb(127, 0, 185);
+    text-decoration: none;
     transition: .4s all ease-in-out;
     -webkit-transition: .4s all ease-in-out;
     -moz-transition: .4s all ease-in-out;
@@ -409,7 +410,7 @@ header {
     color: white;
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -620,7 +621,7 @@ header {
     color: white;
     text-align: center;
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -635,6 +636,11 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.s6img {
+    width:auto;
+    display: block;
 }
 
 .s6headercont {
@@ -760,6 +766,7 @@ header {
     }
     .header img {
         width: 75px;
+        z-index: 1000;
         transform: translateY(2px);
         -webkit-transform: translateY(2px);
         -moz-transform: translateY(2px);
@@ -775,7 +782,7 @@ header {
     .hamburguer {
         display: block;
         cursor: pointer;
-        
+        z-index: 1000;
         flex-direction: column;
         margin: 16px 0px;
         width: 40px;
@@ -822,12 +829,12 @@ header {
         flex-direction: column;
         width: 100%;
         height: 100vh;
-        top: 70px;
+        top: 0px;
         left: 100%;
         backdrop-filter: blur(10px);
         gap: 26px;
         font-size: 22px;
-        padding-top: 28px;
+        padding-top: 70px;
         padding-right: 40px;
         transition: 0.3s all;
         -webkit-transition: 0.3s all;
@@ -840,7 +847,7 @@ header {
     }
 
     .nav-menu.active {
-        top: 70px;
+        top: 0px;
         left: 0;
         backdrop-filter: blur(10px);
         transition: 0.3s all;
@@ -1068,7 +1075,7 @@ header {
     }
 
     .s2textcont h3 {
-        font-size: 30px;
+        font-size: 28px;
         align-self: center;
     }
 
@@ -1132,7 +1139,10 @@ header {
         font-size: 13px;
     }
 
-
+    .s6img {
+        display: none;
+    }
+    
     .s6headercont {
         max-width: 95%;
         margin-top: 55px;
@@ -1159,6 +1169,10 @@ header {
         font-weight: 600;
         margin-bottom: 10px;
         align-self: flex-start;
+    }
+
+    .s6maincont {
+        padding: 0;
     }
 
 }
@@ -1326,12 +1340,12 @@ footer > div > img {
     }
     .s2textcont h3 {
         color: rgb(127, 0, 185);
-        font-size: 33px;
-        margin-bottom: 30px;
+        font-size: 29px;
+        margin-bottom: 0px;
     }
     
     .s2textcont p {
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 400;
     
     }
