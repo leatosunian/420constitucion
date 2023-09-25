@@ -113,7 +113,7 @@ header {
     background-color: #0a0a0a;
     color: white;
     width: 100%;
-    height: fit-content;
+    height: 100vh;
 }
 
 .s2cont {
@@ -1403,7 +1403,7 @@ footer > div > img {
         font-size: 14px;
     }
     .s6headercont h3 {
-        font-size: 26px;
+        font-size: 27px;
         font-weight: 600;
     }
     #section6 {
