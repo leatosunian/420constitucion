@@ -1391,5 +1391,16 @@ footer > div > img {
         flex-direction: row;
         gap: 10px;
     }
+
+
+}
+
+@media (max-width:1500px){
+    .s6contentcontspan{
+        font-size: 25px;
+    }
+    .s6contentcontp{
+        font-size: 14px;
+    }
 }
 
