@@ -1402,5 +1402,12 @@ footer > div > img {
     .s6contentcontp{
         font-size: 14px;
     }
+    .s6headercont h3 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    #section6 {
+        height: fit-content;
+    }
 }
 
